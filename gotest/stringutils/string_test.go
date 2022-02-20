@@ -3,6 +3,7 @@ package stringutils
 // go test
 // go test -v
 // go test -cover 测试代码覆盖率
+// go test -bench=Reverse  性能基准测试
 
 import "testing"
 
