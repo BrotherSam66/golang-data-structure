@@ -4,29 +4,7 @@
     <option name="autoReloadType" value="ALL" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="62689adf-1ddb-4418-ab4b-85b4e319ac15" name="变更" comment="">
-      <change afterPath="$PROJECT_DIR$/../datastructure/queue/.idea/modules.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../datastructure/queue/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../datastructure/queue/.idea/watcherTasks.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../datastructure/queue/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../datastructure/sparsearray/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../gotest/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../link/.idea/modules.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../link/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../link/.idea/watcherTasks.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../link/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../recursion/main.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../recursion/readme.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../recursion/utils/migong.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../recursion/迷宫.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../sorting/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../stack/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/watcherTasks.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../tcp/tcp_client/.idea/vcs.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../README.md" beforeDir="false" afterPath="$PROJECT_DIR$/../README.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../gotest/stringutils/string_test.go" beforeDir="false" afterPath="$PROJECT_DIR$/../gotest/stringutils/string_test.go" afterDir="false" />
-    </list>
+    <list default="true" id="62689adf-1ddb-4418-ab4b-85b4e319ac15" name="变更" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
