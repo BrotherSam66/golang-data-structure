@@ -1,0 +1,69 @@
+var wg sync.WaitGroup
+wg.Add(1)
+wg.Down()
+wg.Wait()
+
+defer wg.Down()
+
+
+
+func c1(ch chan <- int) {
+ ch <- 888
+close(ch)
+}
+ch1 := make(chan int,100)
+for v :=range ch1 {
+fmt.Printf("接口回来的值：%d",v)
+}
+v,ok:=<-ch1
+
+var lock sync.Mutex
+lock.Lock()
+x=x+1
+lock.Unlock()
+var rwLock sync.RWMutex
+rwLock.RLock()
+rwLock.RUnlock()
+rwLock.Lock()
+rwLockUnlock()
+
+var loadOnce sync.Once
+loadOnce.DO(子程序)
+
+runtime.GOMAXPROCS(本次启用最大核心数)
+c:=make(map[string]int,1,100)
+c["小王子年龄"] =15
+delete(c,"小王子年龄")
+
+war wg sync. WaitGroup
+wg.Add(1)
+go 子程序()
+go func(){
+.... 
+wg.Done()
+}
+wg.Wait()
+
+var syncM = sync.Map{}
+syncM.Store("age",28)
+v,ok:=syncM.Load("age")
+syncM.Range(func(k, v interface{}) bool{
+fmp.Pringf(" key : %v ; value : %v",k,v)
+return true
+})
+suncM.Delete("age")
+str := "zifucuan1"+"字符串2"
+str := fmt.Sprintf("%s%s","zhifucuan1""字符串2")
+str:=strings.Join
+
+for k,v :=range xxx{
+k...
+v...
+}
+
+type person struct{
+name string
+age int
+}
+
+
