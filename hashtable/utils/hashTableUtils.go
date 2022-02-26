@@ -49,19 +49,31 @@ func DemoHashTable() {
 				fmt.Println("出错了：", err)
 			}
 			fmt.Println("插入结束")
-			//} else if strings.ToUpper(inputStr) == "F" {
-			//	fmt.Println("请输入雇员ID，按回车键：")
-			//	fmt.Scanln(&inputID)
-			//	hashTable.Find(inputID)
-			//} else if strings.ToUpper(inputStr) == "D" {
-			//	fmt.Println("请输入雇员ID，按回车键：")
-			//	fmt.Scanln(&inputID)
-			//	hashTable.Delete(inputID)
+		} else if strings.ToUpper(inputStr) == "F" {
+			fmt.Println("请输入查询的雇员ID，按回车键：")
+			fmt.Scanln(&inputID)
+			emp, err := hashTable.DeleteOrFind(false, inputID)
+			if err != nil {
+				fmt.Println("出错了：", err)
+			} else {
+				fmt.Println("查询到的雇员资料：", emp)
+			}
+		} else if strings.ToUpper(inputStr) == "D" {
+			fmt.Println("请输入删除的雇员ID，按回车键：")
+			fmt.Scanln(&inputID)
+			_, err := hashTable.DeleteOrFind(true, inputID)
+			if err != nil {
+				fmt.Println("出错了：", err)
+			} else {
+				fmt.Println("删除成功")
+			}
 		} else if strings.ToUpper(inputStr) == "L" {
 			hashTable.List()
 		} else if strings.ToUpper(inputStr) == "Q" {
 			fmt.Println("您选择了q(quit)退出")
 			return
+		} else {
+			fmt.Println("输入的什么乱七八糟的？")
 		}
 	}
 

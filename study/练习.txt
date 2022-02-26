@@ -65,5 +65,148 @@ type person struct{
 name string
 age int
 }
+============
+var wg sync.WaitGroup
+wg.Add(1)
+wg.Done()
+wg.Wait()
+var lock sync.Mutex
+lock.Lock()
+lock.Unlock()
+var rwLock sync.EWMutex
+rwLock.RLock()
+rwLock.RUnlock()
+rwLock.Lock()
+rwLock.UNLock()
 
+func modify(x *int){}
+funx chanS(ch chan  int){
+ch<-777
+close(ch)
+} 
+func chanl(ch chan<- int){}
+runtime.GOMAXPROCS(2)
+_ = make([]string,10,20)
+c:=make(map[string]int,1)
+c["下王子年龄"] =15
+delete(c,"下王子年龄")
+wg.Add(1)
+go xxxx()
+wg.Add(1)
+iii:=1110
+go func(j int){
+ ...
+wg.Done()
+}(iii)
+add:=func(x, y int) {
+fmt.Pringln(x+y)
+}
+add(10 , 20)
+var ch1 chan int
+ch2:=make(chan int 100)
+ch2 <- 10
+d:=<-ch2
+fmt.Printf("this value == %d\n:" , d)
+close(ch2)
+for v :=range ch2{ v.... }
+ch3:=make(chan int, 1)
+for i:=0;i<10;i++{
+select{
+case data:=<-ch3:
+ fmt.Pringln(data)
+case ch3<-i:
+default:
+frm.Println("啥也没干")
+}
+}
+var loadOnce sync.Once
+loadOnce.DO(函数)
+var m=sync.Map{}
+m.Store("age",18)
+v,_:=m.Load("age")
+m.Range(func(k,v  interface{}) bool {
+k .... v ....
+return true
+})
+m.Delete("age")
+tch := time.After(time.Secont *3)
+fmt.Println("tch == ", <-tch)
+time.Sleep(time.Second + 2)
+_ =strings.Split(str,"|")
+cn="我i你"
+runeCn:=[]rune(cn)
+fmt.Println(len(cn),,[]byte(cn),)
+const PI=3.1415
+array:=[3]int{2,3,4}
+for k,v:=range array{......}
+map :=map[string}int{
+"aa":1,
+"bb":12,
+}
+array :=[5]int{1,2,3,4,5}
+slice1:=array[1:4]
+slice2:=slice1[1:3]
+slice1=append(slice1,22,34,56)
+slice1=append(slice1,slice2...)
+slice1 = append(slice1[:2],slice1[3:]...)
+copy ()slice2,slice1)
+var myMap = make( map[string]interface{}}
+var user struct{
+name string 
+age int
+}
+type addr struct {
+street string
+postCode int
+}
+var ad1 addr
+var ad2 new(addr)
+ad3:=&addr{street : "dajie" ,  postCode : 10010}
+ad4:=addr{......}
+defer func() {
+rec:=recover()
+if rec!=nil{
+.......
+}
+}()
+panic("wo panic le")
+type sayer interface{
+say()
+}
+func do(arg sayer){
+arg.say()
+}
+type dog struct{name string}
 
+func NewDog(name string) *dag{
+return &dag{name : name}
+}
+func (d dog) say(){}
+func (d *dog)say(){}
+
+==================================================
+var wg sync.WaitGroup
+wg.Add(1)
+wg.Done()
+wg.Wait()
+var lock sync.Mutex
+lock.Lock()
+lock.Unlock()
+var rwLock sync.RWMutex
+reLock.RLock()
+rwLock.RUnlock()
+rwLock.Lock()
+rwLock.Unlock()
+func modify(x *int) {
+*x=100
+}
+func chanSend(ch chan int)
+ch<-1100
+close(ch)
+}
+ temp,ok:=,- ch
+if !ok {
+break
+}
+else{
+}

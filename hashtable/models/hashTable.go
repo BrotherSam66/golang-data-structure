@@ -83,6 +83,77 @@ func (h *HashTable) Insert(employ *Employ) error {
 	return nil
 }
 
+// Delete hash表删除一个数据
+func (h *HashTable) Delete(id int) error {
+	arrayID := HashModFun(id)           // 队列编号
+	if h.LinkArr[arrayID].Head == nil { // 这个链表是空的
+		return errors.New("ID对应链表是空的，也就是没有这个ID的数据，删除失败！")
+	}
+	// 到这里，Head不是空
+	cur := h.LinkArr[arrayID].Head // 辅助指针，当前
+	next := cur.Next               // 辅助指针，cur 后面的那个
+	if next == nil {               // 只有一个头
+		if cur.ID == id { // 找到，就是单独的Head
+			h.LinkArr[arrayID].Head = nil // 删除
+			return nil
+		} else {
+			return errors.New("没有这个ID的数据，删除失败！")
+		}
+	} else { // 说明不是只有一个头
+		for cur != nil { // 循环向后
+			if next == nil { // next 空，说明找不到了
+				return errors.New("next 空，说明找不到了，没有这个ID的数据，删除失败！")
+			}
+			if next.ID == id { // 非只有一个头的链表里找到
+				cur.Next = next.Next // 跳过next，相当于删除了next
+				return nil
+			} else if next.ID > id { // next.ID已经大于寻找id了，说明后面找不到了
+				return errors.New("没有这个ID的数据，删除失败！")
+			} else { // 继续向后找
+				cur = cur.Next
+				next = cur.Next
+			}
+		}
+
+	}
+
+	return errors.New("没有这个ID的数据，忙活到最后也没有，删除失败！")
+}
+
+// DeleteOrFind hash表删除or寻找一个数据
+func (h *HashTable) DeleteOrFind(isDelete bool, id int) (Employ, error) {
+	var retEmploy Employ
+	arrayID := HashModFun(id)           // 队列编号
+	if h.LinkArr[arrayID].Head == nil { // 这个链表是空的
+		return retEmploy, errors.New("ID对应链表是空的，也就是没有这个ID的数据！")
+	}
+	// 到这里，Head不是空
+	var pre *Employ = nil          // 辅助指针，cur 当前的前一个
+	cur := h.LinkArr[arrayID].Head // 辅助指针，当前
+	for cur != nil {               // 循环向后
+		if pre == nil && cur.ID == id { // 链表第一个元素是要找的，（包括链表只有一个元素情形）
+			if isDelete {
+				h.LinkArr[arrayID].Head = cur.Next // 头指向下一个，就相当于删除
+				return retEmploy, nil
+			}
+			return *cur, nil // 返回查询结果
+		}
+		if cur.ID == id { // 到这里，找到的肯定不在链表的head
+			if isDelete {
+				pre.Next = cur.Next // 上一个 下级指向 本节点的下一级。相当于删除本节点
+				return retEmploy, nil
+			}
+			return *cur, nil // 返回查询结果
+		}
+		if cur.ID > id { // 当前cur.ID已经大于寻找id了，说明后面找不到了
+			return retEmploy, errors.New("当前cur.ID已经大于寻找id了，说明后面找不到了！")
+		}
+		pre = cur // 标尺整体下移
+		cur = cur.Next
+	}
+	return retEmploy, errors.New("没有这个ID的数据，忙活到最后也没有！")
+}
+
 // List hash表显示全部数据
 func (h *HashTable) List() {
 	for i := 0; i < HashArrayLength; i++ {

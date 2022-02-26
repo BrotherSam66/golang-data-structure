@@ -76,6 +76,7 @@ func main() {
 	*b = 100
 	fmt.Println("*b = ", *b) // 100
 	// make 用于slice map chan （channel）
+	_ = make([]string, 10, 20) // 初始化切片
 	var c map[string]int
 	c = make(map[string]int, 1) // 这里初始化,10表示？？？？
 	c["小王子年龄"] = 15
@@ -96,18 +97,25 @@ func main() {
 	for i := 0; i < 10; i++ {
 		wg.Add(1)
 		go func() {
-			fmt.Println("用一个匿名函数执行一个goroutine。同时还是一个闭包，用了函数外面的变量i", i)
+			fmt.Println("用一个匿名函数执行一个goroutine。同时还是一个闭包，用了函数外面的变量i == ", i)
 			wg.Done()
 		}()
 		wg.Add(1)
 		go func(j int) {
-			fmt.Println("这个不是闭包", j)
+			fmt.Println("这个不是闭包就== ", j)
 			wg.Done()
-		}(i)
+		}(i) // 自执行函数，后面括号进来参数
 	}
 	fmt.Println("testGoroutine后面的句子")
 	//time.Sleep(time.Second) // 延迟的话，就能保证等待子程序执行
 	wg.Wait() // 等计数牌清零，确保所有进程执行完毕
+	// 将匿名函数保存到变量
+	add := func(x, y int) {
+		fmt.Println(x + y)
+	}
+	add(10, 20) // 通过变量调用匿名函数
+
+	// todo 高阶函数，函数作为返回值
 
 	// 第25章 并发之channel。函数之间交换数据的需要
 	// CSP communicating Sequential Processes 通过通信共享内润。不是通过共享内存实现通信
@@ -123,7 +131,7 @@ func main() {
 	fmt.Printf("通道总容量 =%d\n", cap(ch5))
 	d := <-ch5 // 从ch5 接收一个数值
 	fmt.Printf("d的值:=%d\n", d)
-	<-ch5      // 从ch5 接收一个数值直接废弃
+	<-ch5      // 从ch5 接收一个数值直接废弃 _ = <-ch5
 	close(ch5) // 关闭通道
 	// ①对\关闭的通道发值panic。②关闭通道依然可以取值。③对关闭且没有值的通道取值会取到0值。④关闭已经关闭的通道panic。
 	ch1 := make(chan int, 100)
@@ -201,7 +209,7 @@ func main() {
 
 	// rune 等同于int32,常用来处理unicode或utf-8字符，byte 等同于int8，常用来处理ascii字符
 	var chinese = "我I我"
-	fmt.Println("rune chinese length", len(chinese), []byte(chinese)) // 7 ，每个汉字3个字节？
+	fmt.Println("rune chinese length", len(chinese), len([]byte(chinese)), []byte(chinese)) // 7 ，7，7个大值每个汉字3个字节？
 	runeStr := []rune(chinese)
 	fmt.Println("rune chinese word length", len([]rune(chinese)), runeStr) // 3 . rune切片 能自动识别汉字
 	// 常量 显式类型定义： const b string = "abc" 	隐式类型定义： const b = "abc"
@@ -230,13 +238,16 @@ func main() {
 	// 第07章 切片slice 完整表达式 a[low : high : max] a := [5]int{1, 2, 3, 4, 5}  t := a[1:3:5]
 	var sliceA []int // 切片定义
 	arrayB := [5]int{1, 2, 3, 4, 5}
-	sliceA = arrayB[1:3]  // 切片从数组切出来
-	sliceC := sliceA[0:1] // 切片再切
+	sliceA = arrayB[1:4] // 切片从数组切出来，[2 3 4] 前包含后不包含
+	fmt.Println("sliceA = arrayB[1:4] === ", sliceA)
+	sliceC := sliceA[1:3] // 切片再切 [3 4]
+	fmt.Println("切片再切 sliceC := sliceA[1:2] === ", sliceC)
+
 	sliceD := make([]int, 20, 30)
 	sliceE := []int{11, 12, 13, 14, 15, 16}
 	sliceA = append(sliceA, 28, 29)            // append
 	sliceA = append(sliceA, sliceE...)         // append form slice
-	sliceA = append(sliceA[:2], sliceA[3:]...) // 切片中 删除元素
+	sliceA = append(sliceA[:2], sliceA[3:]...) // 切片中 删除元素2 前包含后不包含
 	copy(sliceD, sliceA)                       // 拷贝 a -> d,d容量不够就拷一部分
 	fmt.Printf("sliceA=%v ; len(sliceA)=%d ; cap(sliceA)=%d\n", sliceA, len(sliceA), cap(sliceA))
 	fmt.Printf("sliceC=%v ; len(sliceC)=%d ; cap(sliceC)=%d\n", sliceC, len(sliceC), cap(sliceC))
@@ -253,7 +264,11 @@ func main() {
 	// IsValid()返回v是否持有一个值。如果v是Value零值会返回假，此时v除了IsValid、String、Kind之外的方法都会导致panic。
 	// IsNil()常被用于判断指针是否为空；IsValid()常被用于判定返回值是否有效。
 
-	// TODO 结构体；匿名结构体 var user struct{Name string; Age int}
+	// TODO 结构体；匿名结构体 var user struct{Name string  Age int}
+	//var user struct {
+	//	name string
+	//	age  int
+	//}
 	type addr struct {
 		street   string
 		postCode int
@@ -282,6 +297,35 @@ func main() {
 	a3 := &addr{}
 	err = json.Unmarshal([]byte(jsonStr), a3)
 	fmt.Println(a3, err)
+
+	x := 1
+	y := 2
+	defer calc("AA", x, calc("A", x, y))
+	x = 10
+	defer calc("BB", x, calc("B", x, y))
+	y = 20
+	//A 1 2 3
+	//B 10 2 12
+	//BB 10 12 22
+	//AA 1 3 4
+
+	// panic && recover defer一定要在可能引发panic的语句之前定义。
+	defer func() {
+		rec := recover()
+		//如果程序出出现了panic错误,可以通过recover恢复过来
+		if rec != nil {
+			fmt.Println("recover in B")
+		}
+	}()
+	panic("panic in B")
+}
+
+// 主程序结束了
+
+func calc(index string, a, b int) int {
+	ret := a + b
+	fmt.Println(index, a, b, ret)
+	return ret
 }
 
 // 第19章 接口 是一种类型，抽象的类型。其实是协议/规则 接口不管你是什么类型，只管你实现什么方法
@@ -316,7 +360,7 @@ func (d *dog) sayPoint() { // 方法和接收者。方法是作用于特定类�
 }
 
 // 然后 d1:=NewDog("托尼")
-// (*p1).say  语法糖可以简化为p1.say()
+// (*d1).say  语法糖可以简化为p1.say()
 
 type myInt int // 定义自己的类型
 func (m myInt) sayHi() {
