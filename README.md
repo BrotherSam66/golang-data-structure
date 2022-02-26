@@ -14,8 +14,11 @@ link (链表) ：
 recursion (递归) ：①小老鼠走迷宫，任意大小，任意设计障碍墙，任意设计选址方向顺序；②TODO自动选出最佳路径。
 shorting (排序) ：①选择排序；②插入排序；③快速排序；④几种排序的耗时比对。
 stack (堆栈) ：①栈的基本数据结构和方法；②栈模拟简易计算器。
-stickypag(tcp连接的粘包处理) ：服务端；客户端。
+study ：学习golang练习（主要是特有的语句）
 tcp (socket的tcp连接) ：服务端；客户端。
+tcpstickypag(tcp连接的粘包处理) ：服务端；客户端。
+treebinary(二叉树)
+treeredblack(红黑树)
 udp (socket的udp连接) ：服务端；客户端。
 
 

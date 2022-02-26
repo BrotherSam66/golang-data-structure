@@ -14,8 +14,6 @@ type Employ struct {
 	Next *Employ
 }
 
-// TODO 方法后续加
-
 // EmpLink 指向队列的第一个节点
 type EmpLink struct {
 	Head *Employ

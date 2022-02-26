@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="ALL" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="8f23d8a8-5dad-45b9-91cb-834a29a3cdf9" name="变更" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/treebinary.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/watcherTasks.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/go.mod" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/main.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/models/hero.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/utils/treebinaryUtils.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../README.md" beforeDir="false" afterPath="$PROJECT_DIR$/../README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../datastructure/queue/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../datastructure/queue/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../hashtable/models/hashTable.go" beforeDir="false" afterPath="$PROJECT_DIR$/../hashtable/models/hashTable.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../hashtable/utils/hashTableUtils.go" beforeDir="false" afterPath="$PROJECT_DIR$/../hashtable/utils/hashTableUtils.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../stickypag/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../stickypag/.idea/modules.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../stickypag/.idea/stickypag.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../stickypag/.idea/vcs.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../stickypag/.idea/watcherTasks.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../stickypag/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../stickypag/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../stickypag/stickypag_client/.idea/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../stickypag/stickypag_client/.idea/modules.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../stickypag/stickypag_client/.idea/stickypag_client.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../stickypag/stickypag_client/.idea/watcherTasks.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../stickypag/stickypag_client/encodedecode/encodeDecode.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../stickypag/stickypag_client/go.mod" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../stickypag/stickypag_client/main.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../stickypag/stickypag_server/.idea/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../stickypag/stickypag_server/.idea/.name" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../stickypag/stickypag_server/.idea/modules.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../stickypag/stickypag_server/.idea/stickypag_server.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../stickypag/stickypag_server/.idea/vcs.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../stickypag/stickypag_server/.idea/watcherTasks.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../stickypag/stickypag_server/encodedecode/encodeDecode.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../stickypag/stickypag_server/go.mod" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../stickypag/stickypag_server/main.go" beforeDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="GOROOT" url="file://$PROJECT_DIR$/../../../Program Files/JetBrains/go1.17.1" />
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
+  </component>
+  <component name="GoLibraries">
+    <option name="indexEntireGoPath" value="false" />
+  </component>
+  <component name="ProjectId" id="25edm3wbbsOjOLj84ghZm570evx" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="configurable.GoLibrariesConfigurable.is.expanded" value="true" />
+    <property name="go.formatter.settings.were.checked" value="true" />
+    <property name="go.import.settings.migrated" value="true" />
+    <property name="go.modules.go.list.on.any.changes.was.set" value="true" />
+    <property name="last_opened_file_path" value="$USER_HOME$" />
+    <property name="settings.editor.selected.configurable" value="watcher.settings" />
+  </component>
+  <component name="RunManager">
+    <configuration name="go build treebinary" type="GoApplicationRunConfiguration" factoryName="Go Application" temporary="true" nameIsGenerated="true">
+      <module name="treebinary" />
+      <working_directory value="$PROJECT_DIR$" />
+      <kind value="PACKAGE" />
+      <package value="treebinary" />
+      <directory value="$PROJECT_DIR$" />
+      <filePath value="$PROJECT_DIR$/main.go" />
+      <method v="2" />
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Go 构建.go build treebinary" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="应用程序级" UseSingleDictionary="true" transferred="true" />
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="VgoProject">
+    <integration-enabled>true</integration-enabled>
+  </component>
+</project>

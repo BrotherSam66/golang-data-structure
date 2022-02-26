@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/../tcpstickypag/.idea/stickypag.iml" filepath="$PROJECT_DIR$/../tcpstickypag/.idea/stickypag.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/treebinary.iml" filepath="$PROJECT_DIR$/.idea/treebinary.iml" />
     </modules>
   </component>
 </project>

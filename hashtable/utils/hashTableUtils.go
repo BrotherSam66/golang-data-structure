@@ -3,6 +3,7 @@ package utils
 import (
 	"fmt"
 	"hashtable/models"
+	"os"
 	"strings"
 )
 
@@ -71,6 +72,7 @@ func DemoHashTable() {
 			hashTable.List()
 		} else if strings.ToUpper(inputStr) == "Q" {
 			fmt.Println("您选择了q(quit)退出")
+			os.Exit(0)
 			return
 		} else {
 			fmt.Println("输入的什么乱七八糟的？")

@@ -4,7 +4,40 @@
     <option name="autoReloadType" value="ALL" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="62689adf-1ddb-4418-ab4b-85b4e319ac15" name="变更" comment="" />
+    <list default="true" id="62689adf-1ddb-4418-ab4b-85b4e319ac15" name="变更" comment="">
+      <change afterPath="$PROJECT_DIR$/../treebinary/.idea/modules.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../treebinary/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../treebinary/.idea/watcherTasks.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../treebinary/.idea/workspace.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../treebinary/go.mod" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../treebinary/main.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../treebinary/models/hero.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../treebinary/utils/binarytreeUtils.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../README.md" beforeDir="false" afterPath="$PROJECT_DIR$/../README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../hashtable/models/hashTable.go" beforeDir="false" afterPath="$PROJECT_DIR$/../hashtable/models/hashTable.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../hashtable/utils/hashTableUtils.go" beforeDir="false" afterPath="$PROJECT_DIR$/../hashtable/utils/hashTableUtils.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../tcpstickypag/.idea/modules.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/stickypag.iml" beforeDir="false" afterPath="$PROJECT_DIR$/../tcpstickypag/.idea/stickypag.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../tcpstickypag/.idea/vcs.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/watcherTasks.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../tcpstickypag/.idea/watcherTasks.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../tcpstickypag/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/stickypag_client/.idea/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/../tcpstickypag/stickypag_client/.idea/.gitignore" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/stickypag_client/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../tcpstickypag/stickypag_client/.idea/modules.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/stickypag_client/.idea/stickypag_client.iml" beforeDir="false" afterPath="$PROJECT_DIR$/../tcpstickypag/stickypag_client/.idea/stickypag_client.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/stickypag_client/.idea/watcherTasks.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../tcpstickypag/stickypag_client/.idea/watcherTasks.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/stickypag_client/encodedecode/encodeDecode.go" beforeDir="false" afterPath="$PROJECT_DIR$/../tcpstickypag/stickypag_client/encodedecode/encodeDecode.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/stickypag_client/go.mod" beforeDir="false" afterPath="$PROJECT_DIR$/../tcpstickypag/stickypag_client/go.mod" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/stickypag_client/main.go" beforeDir="false" afterPath="$PROJECT_DIR$/../tcpstickypag/stickypag_client/main.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/stickypag_server/.idea/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/../tcpstickypag/stickypag_server/.idea/.gitignore" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/stickypag_server/.idea/.name" beforeDir="false" afterPath="$PROJECT_DIR$/../tcpstickypag/stickypag_server/.idea/.name" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/stickypag_server/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../tcpstickypag/stickypag_server/.idea/modules.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/stickypag_server/.idea/stickypag_server.iml" beforeDir="false" afterPath="$PROJECT_DIR$/../tcpstickypag/stickypag_server/.idea/stickypag_server.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/stickypag_server/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../tcpstickypag/stickypag_server/.idea/vcs.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/stickypag_server/.idea/watcherTasks.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../tcpstickypag/stickypag_server/.idea/watcherTasks.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/stickypag_server/encodedecode/encodeDecode.go" beforeDir="false" afterPath="$PROJECT_DIR$/../tcpstickypag/stickypag_server/encodedecode/encodeDecode.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/stickypag_server/go.mod" beforeDir="false" afterPath="$PROJECT_DIR$/../tcpstickypag/stickypag_server/go.mod" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/stickypag_server/main.go" beforeDir="false" afterPath="$PROJECT_DIR$/../tcpstickypag/stickypag_server/main.go" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -35,9 +68,39 @@
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="settings.editor.selected.configurable" value="watcher.settings" />
   </component>
+  <component name="RunManager">
+    <configuration default="true" type="GoApplicationRunConfiguration" factoryName="Go Application">
+      <module name="stickypag" />
+      <working_directory value="$PROJECT_DIR$" />
+      <kind value="FILE" />
+      <directory value="$PROJECT_DIR$" />
+      <filePath value="$PROJECT_DIR$" />
+      <method v="2" />
+    </configuration>
+    <configuration default="true" type="GoTestRunConfiguration" factoryName="Go Test">
+      <module name="stickypag" />
+      <working_directory value="$PROJECT_DIR$" />
+      <kind value="DIRECTORY" />
+      <directory value="$PROJECT_DIR$" />
+      <filePath value="$PROJECT_DIR$" />
+      <framework value="gotest" />
+      <method v="2" />
+    </configuration>
+  </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="应用程序级" UseSingleDictionary="true" transferred="true" />
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
   </component>
   <component name="VgoProject">
     <integration-enabled>true</integration-enabled>
