@@ -10,6 +10,6 @@ import (
 func main() {
 
 	http.HandleFunc("/testpath/1/", utils.HandlerFunc)
-	http.ListenAndServe("localhost:9090", nil)
+	http.ListenAndServe("127.0.0.1:9090", nil)
 
 }
