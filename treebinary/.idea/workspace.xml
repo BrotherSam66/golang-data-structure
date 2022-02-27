@@ -4,41 +4,8 @@
     <option name="autoReloadType" value="ALL" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="8f23d8a8-5dad-45b9-91cb-834a29a3cdf9" name="变更" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/treebinary.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/watcherTasks.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/go.mod" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/main.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/models/hero.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/utils/treebinaryUtils.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../README.md" beforeDir="false" afterPath="$PROJECT_DIR$/../README.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../datastructure/queue/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../datastructure/queue/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../hashtable/models/hashTable.go" beforeDir="false" afterPath="$PROJECT_DIR$/../hashtable/models/hashTable.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../hashtable/utils/hashTableUtils.go" beforeDir="false" afterPath="$PROJECT_DIR$/../hashtable/utils/hashTableUtils.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../stickypag/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../stickypag/.idea/modules.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../stickypag/.idea/stickypag.iml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../stickypag/.idea/vcs.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../stickypag/.idea/watcherTasks.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../stickypag/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../stickypag/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../stickypag/stickypag_client/.idea/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../stickypag/stickypag_client/.idea/modules.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../stickypag/stickypag_client/.idea/stickypag_client.iml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../stickypag/stickypag_client/.idea/watcherTasks.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../stickypag/stickypag_client/encodedecode/encodeDecode.go" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../stickypag/stickypag_client/go.mod" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../stickypag/stickypag_client/main.go" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../stickypag/stickypag_server/.idea/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../stickypag/stickypag_server/.idea/.name" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../stickypag/stickypag_server/.idea/modules.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../stickypag/stickypag_server/.idea/stickypag_server.iml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../stickypag/stickypag_server/.idea/vcs.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../stickypag/stickypag_server/.idea/watcherTasks.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../stickypag/stickypag_server/encodedecode/encodeDecode.go" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../stickypag/stickypag_server/go.mod" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../stickypag/stickypag_server/main.go" beforeDir="false" />
+    <list default="true" id="2df47d95-6d7a-4819-a439-aa6482d65525" name="变更" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -52,7 +19,7 @@
   <component name="GoLibraries">
     <option name="indexEntireGoPath" value="false" />
   </component>
-  <component name="ProjectId" id="25edm3wbbsOjOLj84ghZm570evx" />
+  <component name="ProjectId" id="25fdn0WJcWutPagoYtCYHaCy5h5" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
