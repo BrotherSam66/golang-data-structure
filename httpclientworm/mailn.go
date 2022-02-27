@@ -3,5 +3,8 @@ package main
 import "httpclientworm/utils"
 
 func main() {
-	utils.GetHttp()
+	utils.HttpGet()
+	utils.HttpPost()
+	utils.HttpPostForm()
+	utils.HttpGetAddHeader()
 }
